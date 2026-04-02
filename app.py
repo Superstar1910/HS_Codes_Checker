@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 from datetime import date, datetime
 
-st.set_page_config(page_title="Export Readiness Checker (Free)", layout="wide")
+st.set_page_config(page_title="HS Code and Pre-Shipment Checker (Free)", layout="wide")
 
 LIMIT_DAILY_CHECKS = 20
 MAX_BULK_ROWS = 50
