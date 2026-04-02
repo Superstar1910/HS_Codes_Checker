@@ -203,10 +203,10 @@ def process_single(description: str, material: str, origin: str, category: str, 
 
     return result
 
-st.sidebar.title("Export Readiness Checker (Free)")
+st.sidebar.title("HS Code and Pre-Shipment Checker (Free)")
 page = st.sidebar.radio("Navigate", ["Dashboard", "Classify", "Bulk Upload", "Issues Queue", "Session History"])
 
-st.title("Export Readiness Checker (Free)")
+st.title("HS Code and Pre-Shipment Checker (Free)")
 st.caption("Check if your product description is customs-ready before shipment. Detect missing data, improve descriptions, and reduce shipment rejection risk.")
 
 remaining = max(LIMIT_DAILY_CHECKS - st.session_state.usage_count, 0)
