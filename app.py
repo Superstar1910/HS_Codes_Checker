@@ -274,10 +274,10 @@ def render_result(result: dict):
     if result.get("suggested_label"):
         st.markdown(f"**Suggested classification meaning:** {result['suggested_label']}")
 
-st.sidebar.title("Export Readiness Checker (Free)")
+st.sidebar.title("HS Code Checker (Free)")
 page = st.sidebar.radio("Navigate", ["Dashboard", "Classify", "Bulk Upload", "Issues Queue", "Session History"])
 
-st.title("Export Readiness Checker (Free)")
+st.title("HS Code Checker (Free)")
 st.caption("Check if your product description is customs-ready before shipment. Detect missing data, improve descriptions, validate a provided HS code, and reduce shipment rejection risk.")
 
 remaining = max(LIMIT_DAILY_CHECKS - st.session_state.usage_count, 0)
